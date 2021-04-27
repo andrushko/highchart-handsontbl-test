@@ -13,6 +13,8 @@
         integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
     <!-- Latest compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
@@ -22,9 +24,20 @@
     <script src="app/app.js"></script>
     <!-- <link rel="stylesheet" type="text/css" href="https://handsontable.com/static/css/main.css"> -->
     <script src="https://cdn.jsdelivr.net/npm/handsontable@latest/dist/handsontable.full.min.js"></script>
-    <script src="assets/highcharts.js"></script>
-    <script src="assets/highcharts-more.js"></script>
+    
+    <!-- <script src="assets/highcharts.js"></script>
+    <script src="assets/highcharts-more.js"></script> -->
 
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/heatmap.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+    <script src="widgets/shared/common.js"></script>
+    <script src="widgets/shared/api.service.js"></script>
+    <script src="widgets/shared/chart.service.js"></script>
+    <script src="widgets/shared/datatable.service.js"></script>
     <script src="widgets/handsontable/handsontable-widget.js"></script>
     <script src="widgets/highcharts/highcharts-widget.js"></script>
 
@@ -42,17 +55,17 @@
     <br />
 
     <div class="container">
-        <div class="row">
+        <div class="row" ng-init="init()">
             <div class="col-sm-12 widget">
                 <h1>Highcharts Heatmap</h1>
                 <i>Please modify the custom-highcharts-widget so that it returns a heatmap using highcharts.</i>
-                <custom-highcharts-widget></custom-highcharts-widget>
+                <custom-highcharts-widget configs="chart"></custom-highcharts-widget>
             </div>
             <div class="col-sm-12">&nbsp;</div>
             <div class="col-sm-12 widget">
                 <h1>Handsontable Heatmap</h1>
                 <i>Please modify the custom-handsontable-widget so that it returns a heatmap using handsontable.</i>
-                <custom-handsontable-widget></custom-handsontable-widget>
+                <custom-handsontable-widget configs="datatable"></custom-handsontable-widget>
             </div>
         </div>
     </div>
