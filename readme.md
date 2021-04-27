@@ -21,6 +21,3 @@ from the root folder of the cloned repository
 6. Open the application in your web browser
 - To view the application please open the following url
 http://localhost:8000/index.html
-
-### Default web page
-![Default page](https://github.com/sturichardson/developerheatmaptest/blob/master/media/defaultwebpage.PNG?raw=true)
