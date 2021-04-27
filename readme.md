@@ -1,4 +1,4 @@
-## Developer Skills Assessment
+## Run app steps
 
 1. Install Node
 
